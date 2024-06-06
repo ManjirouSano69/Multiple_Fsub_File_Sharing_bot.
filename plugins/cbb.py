@@ -1,4 +1,4 @@
-#(©)Codexbotz
+# btn : about and close change here
 
 from pyrogram import __version__
 from bot import Bot
@@ -10,12 +10,13 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text = f"<b>○ Creator : <a href='tg://user?id={OWNER_ID}'>This Person</a>\n○ Language : <code>Python3</code>\n○ Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio {__version__}</a>\n○ Source Code : <a href='https://github.com/CodeXBotz/File-Sharing-Bot'>Click here</a>\n○ Channel : @CodeXBotz\n○ Support Group : @CodeXBotzSupport</b>",
+            text = f"<b>○ ᴏᴡɴᴇʀ : <a href='tg://user?id=5743248220'>अजनबी</a>\n○ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ : <a href='https://t.me/Animes_Station'>ANIME STATION</a>\n○ ᴏɴɢᴏɪɴɢ ᴀɴɪᴍᴇ : <a href='https://t.me/ongoing_anime_station'>ONGOING ANIME STATION</a>\n○ ᴄʜᴀᴛ ɢʀᴏᴜᴘ : <a href='https://t.me/Anime_talk_station'>Chat</a></b>",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🔒 Close", callback_data = "close")
+                        InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close"),
+                        InlineKeyboardButton('🖇 ᴍᴜsᴛ Jᴏɪɴ', url='https://t.me/Animes_Station')
                     ]
                 ]
             )
